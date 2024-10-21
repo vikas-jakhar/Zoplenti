@@ -7,7 +7,6 @@ import box from '../../assets/images/webp/roadmap-box.webp';
 
 const RoadMap = () => {
     const [isFixed, setIsFixed] = useState(false);
-
     useEffect(() => {
         const handleScroll = () => {
             const roadMapSection = document.getElementById('roadMapSection');
@@ -19,7 +18,6 @@ const RoadMap = () => {
                 setIsFixed(false);
             }
         };
-
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);

@@ -1,4 +1,5 @@
 import './App.css';
+import PreLoader from './components/common/PreLoader';
 import ScrollToTop from './components/common/ScrollToTop';
 import Hero from './components/home/Hero';
 import Leaders from './components/home/Leaders';
@@ -13,6 +14,7 @@ function App() {
       <RoadMap />
       <Ready />
       <ScrollToTop />
+      <PreLoader />
     </div>
   );
 }
