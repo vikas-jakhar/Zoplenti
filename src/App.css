@@ -2,6 +2,43 @@
 
 * {
     scroll-behavior: smooth;
+    font-family: 'Aeonik', sans-serif;
+}
+
+@font-face {
+    font-family: "AeonikTRIAL";
+    src: url('./assets/fonts/AEONIK-REGULARITALIC.TTF');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "AeonikTRIAL";
+    src: url('./assets/fonts/AEONIK-REGULAR.TTF');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "AeonikTRIAL";
+    src: url('./assets/fonts/AEONIK-LIGHTITALIC.TTF');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "AeonikTRIAL";
+    src: url('./assets/fonts/AEONIK-LIGHT.TTF');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "AeonikTRIAL";
+    src: url('./assets/fonts/AEONIK-BOLDITALIC.TTF');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "AeonikTRIAL";
+    src: url('./assets/fonts/AEONIK-BOLD.TTF');
+    font-weight: 700;
 }
 
 .hero .rfm-marquee-container {

@@ -4,7 +4,7 @@ import CommonHeading from "../common/CommonHeading";
 
 const Ready = () => {
     return (
-        <div className="lg:py-24 md:py-16 py-14">
+        <div className="lg:py-24 md:py-16 py-14 relative">
             <div className="container my-11">
                 <div className="xl:flex grid grid-cols-1 lg:grid-cols-2 justify-between items-center gap-[90px] lg:gap-24">
                     <div className="xl:max-w-[548px]">
@@ -30,6 +30,7 @@ const Ready = () => {
                     </div>
                 </div>
             </div>
+            <span className="flex w-full max-w-[1140px] left-1/2 bottom-0 opacity-20 bg-light-blue -translate-x-1/2 absolute h-0.5"></span>
         </div>
     );
 };
