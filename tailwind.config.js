@@ -21,17 +21,20 @@ module.exports = {
       colors: {
         'light-blue': "#33B6FF",
         'off-blue': "#0202021A",
+        'medium-blue': "#33B6FF0D",
         'off-gray': "#FFFFFF33",
         'off-black': "#000C24",
       },
       backgroundImage: {
-        'notification-layer': "url('./assets/images/png/notification-layer.png')"
+        'notification-layer': "url('./assets/images/png/notification-layer.png')",
+        'hero-layer': "url('./assets/images/png/hero-layer.png')",
       },
       boxShadow: {
         '3xl': "0px 0px 12px 0px #02A9E10F",
         '4xl': "0px 0px 11px 0px #02A9F754",
       },
       fontSize: {
+        'custom-lg': "28px",
         'custom-xl': "56px",
       }
     },
