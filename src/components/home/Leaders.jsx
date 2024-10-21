@@ -5,7 +5,7 @@ import Building from './Building';
 
 const Leaders = () => {
     return (
-        <div className='pb-16'>
+        <div className='md:pb-16 pb-2'>
             <div className="container relative">
                 <span className='flex w-full h-0.5 bg-light-blue relative z-10 opacity-20'></span>
                 <CommonHeading className='text-center mt-20 pt-2 relative z-10' text="We're building a family of category leaders" />

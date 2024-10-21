@@ -2,14 +2,15 @@ import Header from '../common/Header'
 import Notification from './Notification'
 import CommonButton from '../common/CommonButton'
 import Icon from '../common/Icons'
-import Partners from './Partners '
+import icon from "../../assets/images/png/hero-icon.png";
+import Partner from './Partner';
 
 const Hero = () => {
     return (
-        <div className='bg-hero-layer bg-center bg-cover bg-no-repeat min-h-[851px]'>
+        <div className='bg-hero-layer bg-center bg-cover bg-no-repeat pb-10 relative lg:min-h-[851px]'>
             <Notification />
             <Header />
-            <div className="container pt-10 sm:pt-14 lg:pt-24 hero">
+            <div className="container relative z-10 pt-10 sm:pt-14 lg:pt-24 hero">
                 <p className='text-light-blue font-normal mt-1 text-center text-base sm:text-xl'>A PARTNER THAT WON'T SELL YOUR COMPETITORS</p>
                 <p className='font-normal text-4xl sm:text-5xl lg:text-custom-xl text-white text-center'><span className='font-bold italic text-light-blue'>Dominate</span> Your Category on Amazon</p>
                 <p className='max-w-[785px] w-full mx-auto text-center font-normal mt-3.5 text-white text-base sm:text-xl'>We are the Amazon reseller that partners <span className='italic'>only</span> with you, not your competitors, and grows your brand to the <span className='font-bold'>#1 spot</span> in your category.</p>
@@ -25,8 +26,9 @@ const Hero = () => {
                     <p className='text-white text-base font-normal'><span className='font-bold'>4,000+</span> reviews on</p>
                     <a href="/" className='flex w-fit'><Icon className='duration-300 ease-linear hover:shadow-4xl' iconName='amazonIcon' /></a>
                 </div>
-                <Partners />
+                <Partner />
             </div>
+            <img src={icon} alt="icon" className='w-full absolute left-0 top-1/2 -translate-y-1/2' />
         </div>
     )
 }

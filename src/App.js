@@ -7,7 +7,7 @@ import RoadMap from './components/home/RoadMap';
 
 function App() {
   return (
-    <div className='bg-off-black overflow-hidden'>
+    <div className='bg-off-black overflow-hidden relative'>
       <Hero />
       <Leaders />
       <RoadMap />
