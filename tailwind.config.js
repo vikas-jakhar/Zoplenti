@@ -26,8 +26,8 @@ module.exports = {
         'off-black': "#000C24",
       },
       backgroundImage: {
-        'notification-layer': "url('./assets/images/png/notification-layer.png')",
-        'hero-layer': "url('./assets/images/png/hero-layer.png')",
+        'notification-layer': "url('./assets/images/webp/notification-layer.webp')",
+        'hero-layer': "url('./assets/images/webp/hero-layer.webp')",
       },
       boxShadow: {
         '3xl': "0px 0px 12px 0px #02A9E10F",

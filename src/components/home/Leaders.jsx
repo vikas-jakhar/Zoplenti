@@ -1,6 +1,6 @@
 import CommonHeading from '../common/CommonHeading'
-import graph from "../../assets/images/png/graph-img.png";
-import blackLayer from "../../assets/images/png/black-layer.png";
+import graph from "../../assets/images/webp/graph-img.webp";
+import blackLayer from "../../assets/images/webp/black-layer.webp";
 import Building from './Building';
 
 const Leaders = () => {

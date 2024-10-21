@@ -1,11 +1,11 @@
-import bruder from "../../assets/images/png/bruder.png";
-import insta from "../../assets/images/png/insta.png";
-import shelf from "../../assets/images/png/shelf-logo.png";
-import rocks from "../../assets/images/png/rocks.png";
-import kala from "../../assets/images/png/kala.png";
-import celtic from "../../assets/images/png/celtic.png";
-import tuffRider from "../../assets/images/png/tuffRider.png";
-import removebg from "../../assets/images/png/removebg.png";
+import bruder from "../../assets/images/webp/bruder.webp";
+import insta from "../../assets/images/webp/insta.webp";
+import shelf from "../../assets/images/webp/shelf-logo.webp";
+import rocks from "../../assets/images/webp/rocks.webp";
+import kala from "../../assets/images/webp/kala.webp";
+import celtic from "../../assets/images/webp/celtic.webp";
+import tuffRider from "../../assets/images/webp/tuffRider.webp";
+import removebg from "../../assets/images/webp/removebg.webp";
 export const HEADER_DATA = [
     {
         heading: "Solutions",

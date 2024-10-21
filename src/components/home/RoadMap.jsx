@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import CommonHeading from '../common/CommonHeading';
 import { ROADMAP_DATA } from '../common/Helper';
 import CommonButton from '../common/CommonButton';
-import roadmap from '../../assets/images/png/roadmap-line.png';
-import box from '../../assets/images/png/roadmap-box.png';
+import roadmap from '../../assets/images/webp/roadmap-line.webp';
+import box from '../../assets/images/webp/roadmap-box.webp';
 
 const RoadMap = () => {
     const [isFixed, setIsFixed] = useState(false);

@@ -2,7 +2,7 @@ import Header from '../common/Header'
 import Notification from './Notification'
 import CommonButton from '../common/CommonButton'
 import Icon from '../common/Icons'
-import icon from "../../assets/images/png/hero-icon.png";
+import icon from "../../assets/images/webp/hero-icon.webp";
 import Partner from './Partner';
 
 const Hero = () => {
