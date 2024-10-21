@@ -58,9 +58,10 @@ const Header = () => {
                 <button
                   aria-label={item.heading}
                   onClick={item.dropdown ? () => toggleDropdown(index) : ToggleOpen}
-                  className="text-white font-normal text-xl"
+                  className="text-white font-normal text-xl flex items-center gap-2"
                 >
                   {item.heading}
+                  <div className={`${activeDropdown === index ? "rotate-180" : ""} duration-300 flex right-0 mt-2 ease-linear relative`}><Icon iconName='downIcon' /></div>
                 </button>
                 {item.dropdown && (
                   <div

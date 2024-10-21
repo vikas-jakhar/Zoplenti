@@ -3,3 +3,7 @@
 * {
     scroll-behavior: smooth;
 }
+
+.hero .rfm-marquee-container {
+    overflow-x: visible !important;
+}

@@ -1,3 +1,11 @@
+import bruder from "../../assets/images/png/bruder.png";
+import insta from "../../assets/images/png/insta.png";
+import shelf from "../../assets/images/png/shelf-logo.png";
+import rocks from "../../assets/images/png/rocks.png";
+import kala from "../../assets/images/png/kala.png";
+import celtic from "../../assets/images/png/celtic.png";
+import tuffRider from "../../assets/images/png/tuffRider.png";
+import removebg from "../../assets/images/png/removebg.png";
 export const HEADER_DATA = [
     {
         heading: "Solutions",
@@ -35,4 +43,14 @@ export const LEADER_LIST = [
     { text: "Electrolyte Replacements" },
     { text: "Equestrian Helmets" },
     { text: "" },
+]
+export const PARTNERS_LIST = [
+    { image: bruder },
+    { image: insta },
+    { image: shelf },
+    { image: rocks },
+    { image: kala },
+    { image: celtic },
+    { image: tuffRider },
+    { image: removebg },
 ]
