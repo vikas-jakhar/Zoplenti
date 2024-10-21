@@ -26,7 +26,7 @@ const RoadMap = () => {
 
     return (
         <div className="sm:pt-16 pt-14 relative" id="roadMapSection">
-            <div className="container mt-3 relative">
+            <div className="container mt-3 pb-2 md:pb-0 relative">
                 <div className="xl:max-w-[481px] lg:max-w-[400px] pl-16 sm:pl-36 lg:pl-0 w-full ml-auto lg:ml-0 mb-8 pb-0.5 relative">
                     <CommonHeading className="xl:leading-[64px]" text="A strategic partner, not another Amazon reseller" />
                     <p className="mt-6 font-normal sm:text-xl text-white text-base sm:leading-9">
@@ -51,7 +51,7 @@ const RoadMap = () => {
                     className={`sm:w-[92px] w-12 h-12 sm:h-[92px] lg:left-1/2 left-5 sm:left-8 lg:-translate-x-1/2 z-50 top-16 ${isFixed ? 'fixed' : 'absolute'}`}
                 />
             </div>
-            <span className='flex w-full h-0.5 bg-light-blue relative z-10 opacity-20 md:mt-24 sm:mt-16 mt-10 max-w-[1140px] mx-auto lg:mt-[140px]'></span>
+            <span className='flex w-full h-0.5 bg-light-blue relative z-10 opacity-20 md:mt-24 sm:mt-16 mt-14 max-w-[1140px] mx-auto lg:mt-[140px]'></span>
         </div>
     );
 };

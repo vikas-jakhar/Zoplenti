@@ -8,7 +8,7 @@ const Ready = () => {
             <div className="container my-11">
                 <div className="xl:flex grid grid-cols-1 lg:grid-cols-2 justify-between items-center gap-[90px] lg:gap-24">
                     <div className="xl:max-w-[548px]">
-                        <CommonHeading className='text-center sm:text-left' text=' Ready to dominate your category?' />
+                        <CommonHeading className='text-center sm:text-left xl:leading-[64px]' text=' Ready to dominate your category?' />
                         <p className="text-white text-center sm:text-left font-normal text-xl leading-9 mt-4 pt-0.5">
                             We choose new subcategories quarterly, and aim to find the right
                             partner within 90 days. If you're here you probably received an

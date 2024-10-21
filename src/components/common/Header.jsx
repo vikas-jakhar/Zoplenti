@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { HEADER_DATA } from './Helper';
 import Icon from './Icons';
 import CommonButton from './CommonButton';
+import user from "../../assets/images/svg/user-icon.svg";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -36,7 +37,7 @@ const Header = () => {
     setActiveDropdown(activeDropdown === index ? null : index);
   };
   return (
-    <div className="mx-auto max-w-[1350px] w-full px-3">
+    <div className="mx-auto max-w-[1374px] w-full px-3">
       <div className="border border-off-gray max-w-[1350px] w-full relative py-4 px-5 bg-off-black rounded-[10px] shadow-3xl mt-5">
         <nav className="flex items-center justify-between">
           <a href="/" className="font-inter font-normal text-2xl sm:text-3xl text-white uppercase tracking-[0.03em]">Logo</a>
@@ -78,13 +79,13 @@ const Header = () => {
               </div>
             ))}
             <button className="font-normal text-white text-lg sm:hidden flex items-center gap-0.5 duration-300 ease-linear hover:scale-95">
-              <Icon iconName="userIcon" /> Log in
+              <img src={user} alt="user" className='w-6 h-6' /> Log in
             </button>
             <CommonButton className='sm:hidden flex' text="LET'S Talk" />
           </div>
           <div className="flex items-center gap-5">
             <button className="font-normal text-white text-lg hidden sm:flex items-center gap-0.5 duration-300 ease-linear hover:scale-95">
-              <Icon iconName="userIcon" /> Log in
+              <img src={user} alt="user" className='w-6 h-6' /> Log in
             </button>
             <CommonButton className='hidden sm:flex' text="LET'S Talk" />
             <div
