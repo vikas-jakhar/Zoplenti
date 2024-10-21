@@ -7,7 +7,7 @@ import Partner from './Partner';
 
 const Hero = () => {
     return (
-        <div className='bg-hero-layer bg-center bg-cover bg-no-repeat pb-10 relative lg:min-h-[851px]'>
+        <div className='bg-hero-layer bg-center bg-cover bg-no-repeat pb-10 relative lg:min-h-[851px] max-w-[1920px] mx-auto overflow-hidden'>
             <Notification />
             <Header />
             <div className="container relative z-10 pt-10 sm:pt-14 lg:pt-24 hero">

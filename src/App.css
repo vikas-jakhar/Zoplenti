@@ -7,3 +7,7 @@
 .hero .rfm-marquee-container {
     overflow-x: visible !important;
 }
+
+.building .rfm-marquee-container {
+    width: 110%;
+}
