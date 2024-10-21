@@ -40,7 +40,7 @@ const Header = () => {
     <div className="mx-auto max-w-[1374px] w-full px-3">
       <div className="border border-off-gray max-w-[1350px] w-full relative py-4 px-5 bg-off-black rounded-[10px] shadow-3xl mt-5">
         <nav className="flex items-center justify-between">
-          <a href="/" className="font-inter font-normal text-2xl sm:text-3xl text-white uppercase tracking-[0.03em]">Logo</a>
+          <a href="/" className="!font-inter font-normal text-2xl sm:text-3xl text-white uppercase tracking-[0.03em]">Logo</a>
           <div
             className={`${open ? 'left-0' : '-left-full'} flex items-center bg-black lg:bg-transparent z-50 fixed justify-center lg:absolute flex-col w-full h-screen top-0 lg:bg-none lg:flex-row lg:h-fit lg:w-fit lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:left-1/2 gap-[18px] duration-300 ease-linear`}
           >
