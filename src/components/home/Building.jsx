@@ -4,7 +4,7 @@ import { LEADER_LIST } from "../common/Helper";
 
 const Building = () => {
     return (
-        <div id="discover-strategy" className="relative w-full my-10">
+        <div id="discover-strategy" className="relative w-full my-10 xl:pl-[51px]">
             <div className="flex items-center gap-2.5 pl-0 sm:pl-4 xl:pl-0">
                 <Icon className="min-w-8 min-h-8" iconName="bugermenuIcon" />
                 <div className="w-full building">

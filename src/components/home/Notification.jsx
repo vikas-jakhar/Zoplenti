@@ -13,7 +13,7 @@ const Notification = () => {
                 <p className='font-bold text-xs md:text-sm lg:text-lg text-center text-white'>Discover Zoplenti's Vision for Long-Term Success — </p>
                 <a href="/" className='font-bold text-xs md:text-sm lg:text-lg duration-300 ease-linear  hover:text-off-black text-white relative group'> Read A Message from Our Founder <span className='-bottom-px absolute duration-300 ease-linear group-hover:bg-off-black left-0 flex w-full h-0.5 bg-white'></span></a>
             </div>
-            <div onClick={handleToggle} className={`border border-white rounded-full flex w-7 h-7 justify-center items-center cursor-pointer`}><Icon className={`duration-300 ease-linear ${hide ? "rotate-90" : ""}`} iconName='crossIcon' /></div>
+            <div onClick={handleToggle} className={`border border-white duration-300 ease-linear hover:border-off-black group rounded-full flex w-7 h-7 justify-center items-center cursor-pointer`}><Icon className={`duration-300 ease-linear ${hide ? "rotate-90" : ""}`} iconName='crossIcon' /></div>
         </div>
     )
 }

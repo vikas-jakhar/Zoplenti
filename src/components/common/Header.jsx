@@ -40,7 +40,7 @@ const Header = () => {
     <div className="mx-auto max-w-[1374px] w-full px-3">
       <div className="border border-off-gray max-w-[1350px] w-full relative py-4 px-5 bg-off-black rounded-[10px] shadow-3xl mt-5">
         <nav className="flex items-center justify-between">
-          <a href="/" className="!font-inter font-normal text-2xl sm:text-3xl text-white uppercase tracking-[0.03em]">Logo</a>
+          <a href="/" className="!font-inter font-normal text-2xl sm:text-custom-lg text-white uppercase tracking-[0.03em]">Logo</a>
           <div
             className={`${open ? 'left-0' : '-left-full'} flex items-center bg-black lg:bg-transparent z-50 fixed justify-center lg:absolute flex-col w-full h-screen top-0 lg:bg-none lg:flex-row lg:h-fit lg:w-fit lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:left-1/2 gap-[18px] duration-300 ease-linear`}
           >
@@ -56,7 +56,7 @@ const Header = () => {
                 <button
                   aria-label={item.heading}
                   onClick={item.dropdown ? () => toggleDropdown(index) : ToggleOpen}
-                  className="text-white font-normal duration-300 ease-linear hover:text-light-blue text-xl flex items-center gap-2"
+                  className="text-white font-normal duration-300 ease-linear group hover:text-light-blue text-xl flex items-center gap-2"
                 >
                   {item.heading}
                   <div className={`${activeDropdown === index ? "rotate-180" : ""} duration-300 flex right-0 mt-2 ease-linear relative`}><Icon iconName='downIcon' /></div>
@@ -85,7 +85,7 @@ const Header = () => {
           </div>
           <div className="flex items-center gap-5">
             <button className="font-normal text-white text-lg hidden sm:flex items-center gap-0.5 duration-300 ease-linear hover:text-light-blue">
-              <img src={user} alt="user" className='w-6 h-6' /> Log in
+              <img src={user} alt="user" className='w-6 h-6' /> <Icon iconName='userIcon' /> Log in
             </button>
             <CommonButton className='hidden sm:flex' text="LET'S Talk" />
             <div
@@ -95,9 +95,9 @@ const Header = () => {
               onClick={ToggleOpen}
               className="w-7 h-5 rounded-full relative lg:hidden flex z-[100] cursor-pointer duration-300 ease-linear"
             >
-              <span className={`${open ? "top-1/2 rotate-45 -translate-y-1/2" : "top-0"} bg-white h-1 flex w-full absolute duration-300 ease-linear left-0`}></span>
-              <span className={`${open ? "opacity-0" : ""} bg-white h-1 flex w-full absolute duration-300 ease-linear left-0 top-1/2 -translate-y-1/2`}></span>
-              <span className={`${open ? "top-1/2 -rotate-45 -translate-y-1/2" : "bottom-0"} bg-white h-1 flex w-full absolute duration-300 ease-linear left-0`}></span>
+              <span className={`${open ? "top-1/2 rotate-45 -translate-y-1/2" : "top-0"} bg-white h-1 flex w-full absolute rounded-md duration-300 ease-linear left-0`}></span>
+              <span className={`${open ? "opacity-0" : ""} bg-white h-1 flex w-full absolute rounded-md duration-300 ease-linear left-0 top-1/2 -translate-y-1/2`}></span>
+              <span className={`${open ? "top-1/2 -rotate-45 -translate-y-1/2" : "bottom-0"} bg-white h-1 flex w-full absolute rounded-md duration-300 ease-linear left-0`}></span>
             </div>
           </div>
         </nav>

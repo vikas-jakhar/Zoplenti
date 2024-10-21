@@ -35,7 +35,7 @@ const RoadMap = () => {
                 </div>
                 {ROADMAP_DATA.map((items, index) => (
                     <div key={index} className={`xl:max-w-[450px] lg:max-w-[400px] pl-16 sm:pl-36 lg:pl-0 w-full ml-auto ${index === 0 ? 'pt-10 lg:pt-0' : 'lg:mt-24 sm:mt-10 mt-5 pt-6'}`}>
-                        <p className="text-white font-bold text-2xl sm:text-custom-lg mb-4">{items.title}</p>
+                        <p className="text-white font-bold text-2xl sm:text-custom-sm mb-4">{items.title}</p>
                         <p className="pt-0.5 font-normal text-white sm:text-lg text-sm sm:leading-[30px]">{items.text}</p>
                         {index !== 0 && index !== 4 && <CommonButton className="mt-[18px]" text={items.button} />}
                     </div>
@@ -48,7 +48,7 @@ const RoadMap = () => {
                 <img
                     src={box}
                     alt="box"
-                    className={`sm:w-[92px] w-12 h-12 sm:h-[92px] lg:left-1/2 left-5 sm:left-8 lg:-translate-x-1/2 z-50 top-16 ${isFixed ? 'fixed' : 'absolute'}`}
+                    className={`sm:w-[92px] w-12 h-12 sm:h-[92px] lg:left-1/2 left-5 sm:left-8 lg:-translate-x-1/2 z-50 absolute top-16 ${isFixed ? 'lg:!fixed' : ''}`}
                 />
             </div>
             <span className='flex w-full h-0.5 bg-light-blue relative z-10 opacity-20 md:mt-24 sm:mt-16 mt-14 max-w-[1140px] mx-auto lg:mt-[140px]'></span>
