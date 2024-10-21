@@ -27,3 +27,12 @@ export const DOMINATE_LIST = [
     { amount: "100%", about: "5-star lifetime seller rating" },
     { amount: "2016", about: "Over 8 years of expertise" },
 ]
+export const LEADER_LIST = [
+    { text: "Radio Scanners" },
+    { text: "Knife Block Sets" },
+    { text: "Cushions" },
+    { text: "Tuning" },
+    { text: "Electrolyte Replacements" },
+    { text: "Equestrian Helmets" },
+    { text: "" },
+]

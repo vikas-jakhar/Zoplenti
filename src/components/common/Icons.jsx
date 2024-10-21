@@ -39,6 +39,15 @@ const Icon = (props) => {
                     </clipPath>
                 </defs>
             </svg>
+        ),
+        bugermenuIcon: (
+            <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3.42847" y="6.78577" width="25.4067" height="2.98902" rx="1.49451" fill="white" />
+                <rect x="13.1427" y="23.225" width="15.6924" height="2.98902" rx="1.49451" fill="white" />
+                <rect x="5.2973" y="23.225" width="2.98902" height="2.98902" rx="1.49451" fill="white" />
+                <rect x="13.1427" y="15.0059" width="15.6924" height="2.98902" rx="1.49451" fill="white" />
+                <rect x="5.2973" y="15.0059" width="2.98902" height="2.98902" rx="1.49451" fill="white" />
+            </svg>
         )
     };
 

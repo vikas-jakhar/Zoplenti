@@ -27,32 +27,33 @@ const RoadMap = () => {
     }, []);
 
     return (
-        <div className="py-16 relative" id="roadMapSection">
+        <div className="sm:pt-16 pt-14 relative" id="roadMapSection">
             <div className="container mt-3 relative">
-                <div className={`xl:max-w-[481px] lg:max-w-[400px] pl-36 lg:pl-0 w-full ml-auto lg:ml-0 mb-8 pb-0.5 relative ${isFixed ? 'lg:fixed top-10 z-50' : ''}`}>
+                <div className="xl:max-w-[481px] lg:max-w-[400px] pl-16 sm:pl-36 lg:pl-0 w-full ml-auto lg:ml-0 mb-8 pb-0.5 relative">
                     <CommonHeading className="xl:leading-[64px]" text="A strategic partner, not another Amazon reseller" />
-                    <p className="mt-6 font-normal text-xl text-white leading-9">
+                    <p className="mt-6 font-normal sm:text-xl text-white text-base sm:leading-9">
                         We are a complete solution to capturing market share from competitors and executing a winning Amazon strategy, while you focus on building great products.
                     </p>
                 </div>
                 {ROADMAP_DATA.map((items, index) => (
-                    <div key={index} className={`xl:max-w-[450px] lg:max-w-[400px] pl-36 lg:pl-0 w-full ml-auto ${index === 0 ? 'pt-10 lg:pt-0' : 'lg:mt-24 mt-10 pt-6'}`}>
-                        <p className="text-white font-bold text-custom-lg mb-4">{items.title}</p>
-                        <p className="pt-0.5 font-normal text-white text-lg leading-[30px]">{items.text}</p>
+                    <div key={index} className={`xl:max-w-[450px] lg:max-w-[400px] pl-16 sm:pl-36 lg:pl-0 w-full ml-auto ${index === 0 ? 'pt-10 lg:pt-0' : 'lg:mt-24 sm:mt-10 mt-5 pt-6'}`}>
+                        <p className="text-white font-bold text-2xl sm:text-custom-lg mb-4">{items.title}</p>
+                        <p className="pt-0.5 font-normal text-white sm:text-lg text-sm sm:leading-[30px]">{items.text}</p>
                         {index !== 0 && index !== 4 && <CommonButton className="mt-[18px]" text={items.button} />}
                     </div>
                 ))}
                 <img
                     src={roadmap}
                     alt="roadmap"
-                    className={`top-0 w-[100px] lg:left-1/2 left-7 lg:-translate-x-1/2 h-full absolute`}
+                    className={`top-0 w-14 sm:w-[100px] lg:left-1/2 left-4 sm:left-7 lg:-translate-x-1/2 h-full absolute`}
                 />
                 <img
                     src={box}
                     alt="box"
-                    className={`w-[92px] h-[92px] lg:left-1/2 left-8 lg:-translate-x-1/2 z-50 top-16 ${isFixed ? 'fixed' : 'absolute'}`}
+                    className={`sm:w-[92px] w-12 h-12 sm:h-[92px] lg:left-1/2 left-5 sm:left-8 lg:-translate-x-1/2 z-50 top-16 ${isFixed ? 'fixed' : 'absolute'}`}
                 />
             </div>
+            <span className='flex w-full h-0.5 bg-light-blue relative z-10 opacity-20 md:mt-24 sm:mt-16 mt-10 max-w-[1140px] mx-auto lg:mt-[140px]'></span>
         </div>
     );
 };
