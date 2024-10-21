@@ -7,16 +7,19 @@ import box from '../../assets/images/png/roadmap-box.png';
 
 const RoadMap = () => {
     const [isFixed, setIsFixed] = useState(false);
+
     useEffect(() => {
         const handleScroll = () => {
             const roadMapSection = document.getElementById('roadMapSection');
             const rect = roadMapSection?.getBoundingClientRect();
-            if (rect?.top <= 0 && rect?.bottom > 0) {
+            const windowHeight = window.innerHeight;
+            if (rect?.top <= 0 && rect?.bottom > windowHeight) {
                 setIsFixed(true);
             } else {
                 setIsFixed(false);
             }
         };
+
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
