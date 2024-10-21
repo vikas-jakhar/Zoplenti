@@ -8,7 +8,7 @@ const Building = () => {
             <div className="flex items-center gap-2.5 pl-0 sm:pl-4 xl:pl-0">
                 <Icon className="min-w-8 min-h-8" iconName="bugermenuIcon" />
                 <div className="w-full building">
-                    <Marquee direction="right" speed="100">
+                    <Marquee direction="right" speed="100" pauseOnHover={true}>
                         {LEADER_LIST.map((obj, i) => (
                             <p
                                 key={i}

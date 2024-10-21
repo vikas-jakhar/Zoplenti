@@ -47,7 +47,7 @@ const Header = () => {
             <a href='#roadMapSection'
               aria-label='Strategy'
               onClick={ToggleOpen}
-              className="text-white font-normal text-xl"
+              className="text-white font-normal text-xl duration-300 ease-linear hover:text-light-blue  "
             >
               Strategy
             </a>
@@ -56,7 +56,7 @@ const Header = () => {
                 <button
                   aria-label={item.heading}
                   onClick={item.dropdown ? () => toggleDropdown(index) : ToggleOpen}
-                  className="text-white font-normal text-xl flex items-center gap-2"
+                  className="text-white font-normal duration-300 ease-linear hover:text-light-blue text-xl flex items-center gap-2"
                 >
                   {item.heading}
                   <div className={`${activeDropdown === index ? "rotate-180" : ""} duration-300 flex right-0 mt-2 ease-linear relative`}><Icon iconName='downIcon' /></div>
@@ -78,13 +78,13 @@ const Header = () => {
                 )}
               </div>
             ))}
-            <button className="font-normal text-white text-lg sm:hidden flex items-center gap-0.5 duration-300 ease-linear hover:scale-95">
+            <button className="font-normal text-white text-lg sm:hidden flex items-center gap-0.5 duration-300 ease-linear hover:text-light-blue">
               <img src={user} alt="user" className='w-6 h-6' /> Log in
             </button>
             <CommonButton className='sm:hidden flex' text="LET'S Talk" />
           </div>
           <div className="flex items-center gap-5">
-            <button className="font-normal text-white text-lg hidden sm:flex items-center gap-0.5 duration-300 ease-linear hover:scale-95">
+            <button className="font-normal text-white text-lg hidden sm:flex items-center gap-0.5 duration-300 ease-linear hover:text-light-blue">
               <img src={user} alt="user" className='w-6 h-6' /> Log in
             </button>
             <CommonButton className='hidden sm:flex' text="LET'S Talk" />

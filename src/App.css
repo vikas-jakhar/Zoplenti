@@ -41,6 +41,14 @@
     font-weight: 700;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #33B6FF;
+}
+
 .hero .rfm-marquee-container {
     overflow-x: visible !important;
 }

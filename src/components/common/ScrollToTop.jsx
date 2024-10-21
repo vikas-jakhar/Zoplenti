@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import scrollIcon from "../../assets/images/svg/scroll-to-top.svg";
 
 const ScrollToTop = () => {
     const [visible, setVisible] = useState(false);
@@ -37,15 +38,13 @@ const ScrollToTop = () => {
     return (
         <button
             onClick={Scroll}
-            className="bg-white border border-dark-green group place-items-center xl:w-16 xl:h-16 md:w-14 md:h-14 sm:w-12 sm:h-12 w-10 h-10 rounded-full fixed bottom-[1.5%] sm:bottom-[2%] md:bottom-[2%] cursor-pointer shadow-6xl duration-300 ease-linear z-30"
+            className="bg-white border border-dark-green hover:shadow-4xl hover:bg-off-black group group place-items-center xl:w-16 xl:h-16 md:w-14 md:h-14 sm:w-12 sm:h-12 w-10 h-10 rounded-full fixed bottom-[1.2%] sm:bottom-[2%] md:bottom-[2%] cursor-pointer shadow-6xl duration-300 ease-linear z-30"
             style={{
                 display: visible ? 'grid' : 'none',
                 right: isLargeScreen ? 'calc((100vw - 1920px) / 2 + 30px)' : '1.5%',
             }}
         >
-            <span className="sm:text-sm text-xs md:text-base text-offBlack font-bold duration-300 ease-linear">
-                {scrollPercent}%
-            </span>
+            <img src={scrollIcon} alt="scrollIcon" className='w-7/12' />
         </button>
     );
 };

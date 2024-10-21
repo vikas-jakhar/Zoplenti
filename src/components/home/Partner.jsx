@@ -6,7 +6,7 @@ const Partners = () => {
         <div id="brands" className="relative z-[10] pt-24">
             <div className="relative h-[76px]">
                 <div className="max-w-[1920px] mx-auto absolute top-0 left-0">
-                    <Marquee speed="100" direction="left" gradient={false}>
+                    <Marquee speed="100" direction="left" gradient={false} pauseOnHover={true}>
                         {PARTNERS_LIST.map((obj, i) => (
                             <div key={i} className="mx-7 move-slider sm:mx-[37px]">
                                 <img
