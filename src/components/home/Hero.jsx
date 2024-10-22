@@ -31,8 +31,8 @@ const Hero = () => {
                 </div>
             </div>
             <Partner />
-            <img src={iconRight} alt="iconRight" className='absolute right-0 top-1/2 -translate-y-1/2' />
-            <img src={iconLeft} alt="iconLeft" className='absolute left-0 top-1/2 -translate-y-1/2' />
+            <img src={iconRight} alt="iconRight" className='absolute opacity-40 sm:opacity-100 right-0 top-1/2 -translate-y-1/2' />
+            <img src={iconLeft} alt="iconLeft" className='absolute opacity-40 sm:opacity-100 left-0 top-1/2 -translate-y-1/2' />
         </div>
     )
 }

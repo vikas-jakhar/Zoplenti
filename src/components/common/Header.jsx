@@ -46,7 +46,7 @@ const Header = () => {
             <a href='#roadMapSection'
               aria-label='Strategy'
               onClick={ToggleOpen}
-              className="text-white font-normal text-xl duration-300 ease-linear hover:text-light-blue  "
+              className="text-white font-normal text-xl duration-300 ease-linear mr-7 lg:mr-0 hover:text-light-blue  "
             >
               Strategy
             </a>
@@ -77,7 +77,7 @@ const Header = () => {
                 </div>
               </div>
             ))}
-            <button className="font-normal group text-white text-lg sm:hidden flex items-center gap-0.5 duration-300 ease-linear hover:text-light-blue">
+            <button className="font-normal group text-white mr-8 text-lg sm:hidden flex items-center gap-0.5 duration-300 ease-linear hover:text-light-blue">
               <Icon className='text-sm' iconName='userIcon' /> Log in
             </button>
             <CommonButton className='sm:hidden flex' text="LET'S Talk" />

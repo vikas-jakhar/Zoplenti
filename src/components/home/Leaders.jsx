@@ -14,9 +14,10 @@ const Leaders = () => {
                     <p className='font-normal text-lg sm:text-xl sm:leading-9 text-white max-w-[963px] w-full'>Each quarter, we identify new subcategories to dominate based on our customer interests and existing partner synergy, then find the right brands to collaborate with. We select brands that have quality products and the potential to lead their category, but need the right Amazon partner to get them there.</p>
                 </div>
                 <span className='flex w-full h-0.5 bg-light-blue opacity-20 relative z-10'></span>
-                <img src={graph} alt="graph" className='top-0 right-0 absolute max-w-[1224px] w-full' />
-                <img src={blackLayer} alt="blackLayer" className='top-0 right-0 absolute' />
+                <img src={blackLayer} alt="blackLayer" className='top-0 -right-5 h-full xl:-right-7 absolute' />
+                <img src={blackLayer} alt="blackLayer" className='top-0 -left-5 xl:-left-7 h-full rotate-180 absolute' />
             </div>
+            <img src={graph} alt="graph" className='bottom-7 xl:top-0 xl:bottom-auto left-1/2 -translate-x-1/2 absolute max-w-[1224px] w-full' />
         </div>
     )
 }
