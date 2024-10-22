@@ -24,7 +24,7 @@ const Hero = () => {
                         ))}
                     </div>
                     <p className='text-white text-base font-normal'><span className='font-bold'>4,000+</span> reviews on</p>
-                    <a href="https://www.amazon.in/" target='_blank' className='flex w-fit'><Icon className='duration-300 ease-linear hover:shadow-4xl' iconName='amazonIcon' /></a>
+                    <a href="https://www.amazon.in/" target='_blank' rel="noreferrer" className='flex w-fit'><Icon className='duration-300 ease-linear hover:shadow-4xl' iconName='amazonIcon' /></a>
                 </div>
                 <Partner />
             </div>

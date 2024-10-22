@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { HEADER_DATA } from './Helper';
 import Icon from './Icons';
 import CommonButton from './CommonButton';
-import user from "../../assets/images/svg/user-icon.svg";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -59,7 +58,7 @@ const Header = () => {
                   className="text-white font-normal duration-300 ease-linear group hover:text-light-blue text-xl flex items-center gap-2"
                 >
                   {item.heading}
-                  <div className={`${activeDropdown === index ? "rotate-180" : ""} duration-300 flex right-0 mt-2 ease-linear relative`}><Icon iconName='downIcon' /></div>
+                  <div className={`${activeDropdown === index ? "rotate-180" : ""} duration-300 flex right-0 ease-linear relative ${index === 0 ? "mt-1" : "mt-2"}`}><Icon iconName='downIcon' /></div>
                 </button>
                 {item.dropdown && (
                   <div
@@ -78,14 +77,14 @@ const Header = () => {
                 )}
               </div>
             ))}
-            <button className="font-normal text-white text-lg sm:hidden flex items-center gap-0.5 duration-300 ease-linear hover:text-light-blue">
-              <img src={user} alt="user" className='w-6 h-6' /> Log in
+            <button className="font-normal group text-white text-lg sm:hidden flex items-center gap-0.5 duration-300 ease-linear hover:text-light-blue">
+              <Icon className='text-sm' iconName='userIcon' /> Log in
             </button>
             <CommonButton className='sm:hidden flex' text="LET'S Talk" />
           </div>
           <div className="flex items-center gap-5">
-            <button className="font-normal text-white text-lg hidden sm:flex items-center gap-0.5 duration-300 ease-linear hover:text-light-blue">
-              <img src={user} alt="user" className='w-6 h-6' /> <Icon iconName='userIcon' /> Log in
+            <button className="font-normal group text-white text-lg hidden sm:flex items-center gap-0.5 duration-300 ease-linear hover:text-light-blue">
+              <Icon className='text-sm' iconName='userIcon' /> Log in
             </button>
             <CommonButton className='hidden sm:flex' text="LET'S Talk" />
             <div
