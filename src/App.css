@@ -64,3 +64,9 @@
 .swiper-free-mode>.swiper-wrapper {
     transition-timing-function: linear !important;
 }
+
+@media (min-width:1921px) {
+    .min-h-1100 {
+        min-height: 1100px !important;
+    }
+}
