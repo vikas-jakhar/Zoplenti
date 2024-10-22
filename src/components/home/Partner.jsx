@@ -3,7 +3,7 @@ import { PARTNERS_LIST } from "../common/Helper";
 
 const Partners = () => {
     return (
-        <div id="brands" className="relative z-[10] pt-24">
+        <div id="brands" className="relative z-[10] pt-24 max-w-[1440px] mx-auto w-full overflow-hidden">
             <div className="relative h-[76px]">
                 <div className="max-w-[1920px] mx-auto absolute top-0 left-0">
                     <Marquee speed="100" direction="left" gradient={false} pauseOnHover={true}>

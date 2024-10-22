@@ -41,6 +41,10 @@
     font-weight: 700;
 }
 
+.swiper-wrapper {
+    align-items: center;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -55,4 +59,8 @@
 
 .building .rfm-marquee-container {
     width: 110%;
+}
+
+.swiper-free-mode>.swiper-wrapper {
+    transition-timing-function: linear !important;
 }

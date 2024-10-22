@@ -48,7 +48,7 @@ const RoadMap = () => {
                 <img
                     src={box}
                     alt="box"
-                    className={`sm:w-[92px] w-12 h-12 sm:h-[92px] lg:left-1/2 left-5 sm:left-8 lg:-translate-x-1/2 z-50 absolute top-16 ${isFixed ? 'lg:!fixed' : ''}`}
+                    className={`sm:w-[92px] w-12 h-12 sm:h-[92px] lg:left-1/2 left-5 sm:left-8 lg:-translate-x-1/2 z-10 absolute top-16 ${isFixed ? 'lg:!fixed' : ''}`}
                 />
             </div>
             <span className='flex w-full h-0.5 bg-light-blue relative z-10 opacity-20 md:mt-24 sm:mt-16 mt-14 max-w-[1140px] mx-auto lg:mt-[140px]'></span>

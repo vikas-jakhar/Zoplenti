@@ -51,30 +51,30 @@ const Header = () => {
               Strategy
             </a>
             {HEADER_DATA.map((item, index) => (
-              <div key={index} className="relative dropdown">
+              <div key={index} className="relative dropdown group">
                 <button
                   aria-label={item.heading}
                   onClick={item.dropdown ? () => toggleDropdown(index) : ToggleOpen}
                   className="text-white font-normal duration-300 ease-linear group hover:text-light-blue text-xl flex items-center gap-2"
                 >
                   {item.heading}
-                  <div className={`${activeDropdown === index ? "rotate-180" : ""} duration-300 flex right-0 ease-linear relative ${index === 0 ? "mt-1" : "mt-2"}`}><Icon iconName='downIcon' /></div>
+                  <div className={`${activeDropdown === index ? "rotate-180" : ""} duration-300 group-hover:rotate-180 flex right-0 ease-linear relative ${index === 0 ? "mt-1" : "mt-2"}`}><Icon iconName='downIcon' /></div>
                 </button>
-                {item.dropdown && (
-                  <div
-                    className={`${activeDropdown === index ? 'block' : 'hidden'} absolute top-full left-0 bg-white text-off-black py-2 mt-2 rounded-lg z-50 shadow-lg`}
-                  >
+                <div
+                  className={`${activeDropdown === index ? 'block' : 'hidden'} absolute group-hover:block top-full left-0 -mt-1 pt-3 rounded-lg z-50 shadow-lg`}
+                >
+                  <div className={`${activeDropdown === index ? 'block' : 'hidden'} group-hover:block top-full bg-off-black overflow-hidden py-2 text-white border border-light-blue rounded-lg z-50 shadow-lg`}>
                     {item.dropdown.map((dropdownItem, i) => (
                       <a
                         key={i}
                         href={dropdownItem.link}
-                        className="block px-4 py-2 text-sm text-nowrap hover:bg-gray-100"
+                        className="block px-4 my-2 text-sm text-nowrap hover:text-light-blue duration-300 ease-linear"
                       >
                         {dropdownItem.title}
                       </a>
                     ))}
                   </div>
-                )}
+                </div>
               </div>
             ))}
             <button className="font-normal group text-white text-lg sm:hidden flex items-center gap-0.5 duration-300 ease-linear hover:text-light-blue">

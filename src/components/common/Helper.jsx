@@ -42,7 +42,6 @@ export const LEADER_LIST = [
     { text: "Tuning" },
     { text: "Electrolyte Replacements" },
     { text: "Equestrian Helmets" },
-    { text: "" },
 ]
 export const PARTNERS_LIST = [
     { image: bruder },
