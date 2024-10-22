@@ -40,7 +40,7 @@ const RoadMap = () => {
                 </div>
                 {ROADMAP_DATA.map((items, index) => (
                     <div key={index} className={`xl:max-w-[450px] lg:max-w-[400px] pl-20 sm:pl-36 lg:pl-0 w-full ml-auto ${index === 0 ? 'pt-10 lg:pt-5' : 'lg:mt-24 sm:mt-10 mt-5 pt-6'}`}>
-                        <p className="text-white font-bold text-2xl sm:text-custom-sm mb-4">{items.title}</p>
+                        <p className="text-white font-bold text-2xl sm:text-custom-sm sm:leading-9 mb-4">{items.title}</p>
                         <p className="pt-0.5 font-normal text-white sm:text-lg text-sm sm:leading-[30px]">{items.text}</p>
                         {index !== 0 && index !== 4 && <CommonButton className="mt-[18px]" text={items.button} />}
                     </div>

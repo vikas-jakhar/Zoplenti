@@ -42,6 +42,8 @@ export const LEADER_LIST = [
     { text: "Tuning" },
     { text: "Electrolyte Replacements" },
     { text: "Equestrian Helmets" },
+    { text: "Radio Scanners" },
+    { text: "Knife Block Sets" },
 ]
 export const PARTNERS_LIST = [
     { image: bruder },
@@ -52,4 +54,6 @@ export const PARTNERS_LIST = [
     { image: celtic },
     { image: tuffRider },
     { image: removebg },
+    { image: bruder },
+    { image: insta },
 ]
