@@ -11,13 +11,18 @@ const RoadMap = () => {
         const handleScroll = () => {
             const roadMapSection = document.getElementById('roadMapSection');
             const rect = roadMapSection?.getBoundingClientRect();
-            const windowHeight = window.innerHeight;
-            if (rect?.top <= 0 && rect?.bottom > windowHeight) {
-                setIsFixed(true);
-            } else {
-                setIsFixed(false);
+            if (rect) {
+                const isTopVisible = rect.top <= -70;
+                const isBottomVisible = rect.bottom >= 370;
+
+                if (isTopVisible && isBottomVisible) {
+                    setIsFixed(true);
+                } else {
+                    setIsFixed(false);
+                }
             }
         };
+
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -27,9 +32,9 @@ const RoadMap = () => {
     return (
         <div className="sm:pt-16 pt-14 relative" id="roadMapSection">
             <div className="container mt-3 pb-2 md:pb-0 relative">
-                <div className="xl:max-w-[481px] lg:max-w-[400px] pl-16 sm:pl-36 lg:pl-0 w-full ml-auto lg:ml-0 mb-8 pb-0.5 relative">
+                <div className="xl:max-w-[481px] lg:max-w-[400px] pl-16 sm:pl-36 lg:pl-0 w-full ml-auto lg:ml-0 mb-8 pb-0.5">
                     <CommonHeading className="xl:leading-[64px]" text="A strategic partner, not another Amazon reseller" />
-                    <p className="mt-6 font-normal sm:text-xl text-white text-base sm:leading-9">
+                    <p className="mt-6 font-normal sm:text-xl text-white sticky text-base sm:leading-9">
                         We are a complete solution to capturing market share from competitors and executing a winning Amazon strategy, while you focus on building great products.
                     </p>
                 </div>
